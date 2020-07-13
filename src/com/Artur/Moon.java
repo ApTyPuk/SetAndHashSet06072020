@@ -1,16 +1,11 @@
 package com.Artur;
 
-public class Moon extends HeavenlyBody{
-    private final String bodyTypeName = "MOON";
+/**
+ * Created by dev on 5/02/2016.
+ */
+public class Moon extends HeavenlyBody {
 
     public Moon(String name, double orbitalPeriod) {
-        super(name, orbitalPeriod);
-        super.getBodyType().add(this.bodyTypeName);
+        super(name, orbitalPeriod, BodyTypes.MOON);
     }
-
-    public String getBodyTypeName() {
-        return bodyTypeName;
-    }
-
-
 }
